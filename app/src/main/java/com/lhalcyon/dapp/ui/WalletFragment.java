@@ -1,6 +1,6 @@
 package com.lhalcyon.dapp.ui;
 
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 import android.os.Bundle;
 
 import com.lhalcyon.dapp.R;

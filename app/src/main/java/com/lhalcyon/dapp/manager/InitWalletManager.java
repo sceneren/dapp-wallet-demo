@@ -115,12 +115,12 @@ public class InitWalletManager {
         Logger.i("childExtendedBase58:" + childExtendedBase58);
 
         // 4. get key pair
-        byte[] privateKeyBytes = childPrivateKey.getKey();
+        byte[] privateKeyBytes = childPrivateKey.extendedKeyByteArray();
         ECKeyPair keyPair = ECKeyPair.create(privateKeyBytes);
 
         // we 've gotten what we need
-        String privateKey = childPrivateKey.getPrivateKey();
-        String publicKey = childPrivateKey.neuter().getPublicKey();
+        String privateKey = keyPair.getPrivateKey().toString();
+        String publicKey = keyPair.getPublicKey().toString();
         String address = Keys.getAddress(keyPair);
 
         Logger.i("privateKey:" + privateKey);

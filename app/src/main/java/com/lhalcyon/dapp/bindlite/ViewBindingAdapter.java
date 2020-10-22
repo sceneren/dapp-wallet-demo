@@ -1,6 +1,6 @@
 package com.lhalcyon.dapp.bindlite;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import android.view.View;
 
 /**

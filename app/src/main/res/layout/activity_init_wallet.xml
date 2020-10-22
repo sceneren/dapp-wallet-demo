@@ -8,13 +8,14 @@
             type="com.lhalcyon.dapp.bindlite.Perform&lt;android.view.View&gt;"/>
     </data>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
             app:titleTextColor="@android:color/white"
             android:background="@color/colorPrimary"
             android:layout_width="match_parent"
@@ -27,7 +28,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_margin="16dp"
                 android:layout_height="45dp">
@@ -40,9 +41,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_margin="16dp"
                 android:layout_height="45dp">
@@ -54,13 +55,13 @@
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
 

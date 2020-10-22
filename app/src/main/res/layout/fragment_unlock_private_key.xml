@@ -30,7 +30,7 @@
             android:textColorHint="#ccc"
             android:textSize="14dp"/>
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
             android:inputType="textPassword"
             android:imeOptions="actionNext"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"/>
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_re_password"
             android:inputType="textPassword"
             android:imeOptions="actionNext"
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"/>
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_unlock"
             bind:click="@{call}"
             android:text="unlock"

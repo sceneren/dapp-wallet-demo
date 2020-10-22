@@ -3,8 +3,10 @@
 package com.lhalcyon.dapp.stuff;
 
 
-import android.support.design.widget.Snackbar;
+import android.annotation.SuppressLint;
 import android.view.View;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import io.reactivex.Flowable;
 import io.reactivex.FlowableTransformer;
@@ -24,6 +26,7 @@ public class ScheduleCompat {
        return upstream -> upstream.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
    }
 
+   @SuppressLint("CheckResult")
    public static void snackInMain(View view, String content){
        Flowable
                .just(content)

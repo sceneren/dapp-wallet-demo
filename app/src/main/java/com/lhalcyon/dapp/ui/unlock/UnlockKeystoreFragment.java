@@ -1,11 +1,12 @@
 package com.lhalcyon.dapp.ui.unlock;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.text.TextUtils;
 import android.view.View;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.lhalcyon.dapp.R;
 import com.lhalcyon.dapp.bindlite.Perform;
 import com.lhalcyon.dapp.config.Tag;
@@ -51,6 +52,7 @@ public class UnlockKeystoreFragment extends BaseFragment<FragmentUnlockKeystoreB
                 .flatMap(s -> InitWalletManager.shared().importKeystore(mContext,s,password))
                 .compose(ScheduleCompat.apply())
                 .subscribe(new HLSubscriber<HLWallet>(mContext,true) {
+                    @SuppressLint("CheckResult")
                     @Override
                     protected void success(HLWallet data) {
                         Snackbar.make(mBinding.getRoot(),"Unlock Success",Snackbar.LENGTH_LONG).show();

@@ -2,10 +2,10 @@ package com.lhalcyon.dapp.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.text.TextUtils;
 import android.view.View;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.lhalcyon.dapp.R;
 import com.lhalcyon.dapp.bindlite.Perform;
 import com.lhalcyon.dapp.config.Tag;

@@ -2,7 +2,8 @@ package com.lhalcyon.dapp.manager;
 
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lhalcyon.dapp.config.Tag;

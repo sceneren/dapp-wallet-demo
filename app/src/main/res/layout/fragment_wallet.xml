@@ -2,47 +2,48 @@
 <layout>
 
     <data>
+
         <variable
             name="vm"
-            type="com.lhalcyon.dapp.ui.WalletFragment"/>
+            type="com.lhalcyon.dapp.ui.WalletFragment" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                         android:orientation="vertical"
-                                         android:layout_width="match_parent"
-                                         android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <RelativeLayout
-            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
-            android:layout_height="120dp">
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary">
 
             <LinearLayout
-                android:layout_centerInParent="true"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
 
                 <TextView
-                    android:text="$ 0.00"
-                    android:textSize="18dp"
-                    android:textColor="@android:color/white"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="$ 0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
 
                 <TextView
-                    android:singleLine="true"
-                    android:text="@{vm.currentAddress}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="48dp"
+                    android:layout_marginTop="6dp"
                     android:layout_marginRight="48dp"
                     android:ellipsize="middle"
-                    android:textSize="14dp"
-                    android:layout_marginTop="6dp"
-                    android:textColor="@android:color/white"
                     android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:singleLine="true"
+                    android:text="@{vm.currentAddress}"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
 
             </LinearLayout>
 

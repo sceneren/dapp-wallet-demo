@@ -1,50 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="call"
-            type="com.lhalcyon.dapp.bindlite.Perform&lt;android.view.View&gt;"/>
+            type="com.lhalcyon.dapp.bindlite.Perform&lt;android.view.View&gt;" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:background="@color/colorPrimary"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"/>
+            app:titleTextColor="@android:color/white" />
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
-            android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_margin="16dp"
             android:hint="password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_re_password"
-            android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:hint="re password"
-            android:inputType="textPassword"/>
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_create"
-            bind:click="@{call}"
-            android:text="create"
-            android:background="@color/colorAccent"
-            android:textColor="@android:color/white"
             android:layout_margin="16dp"
+            android:hint="re password"
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_create"
             android:layout_width="match_parent"
-            android:layout_height="45dp"/>
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:text="create"
+            android:textColor="@android:color/white"
+            bind:click="@{call}" />
     </LinearLayout>
 
 </layout>
